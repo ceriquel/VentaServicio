@@ -9,6 +9,6 @@ package ventaservicio.controlador;
  *
  * @author Cèsar
  */
-public class ControladorCrud {
+public class ControladorModificar {
     
 }

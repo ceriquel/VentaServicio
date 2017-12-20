@@ -9,6 +9,6 @@ package ventaservicio.modelo;
  *
  * @author Cèsar
  */
-public class ModeloCrud {
+public class ModeloAgregar {
     
 }
