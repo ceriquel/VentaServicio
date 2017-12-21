@@ -5,10 +5,19 @@
  */
 package ventaservicio.controlador;
 
+import java.sql.SQLException;
+import ventaservicio.modelo.ModeloEliminar;
+
 /**
  *
  * @author Cèsar
  */
 public class ControladorEliminar {
     
+     private ModeloEliminar modeloBorrar;
+    
+    public void borrarVenta(int idVenta) throws SQLException{
+        modeloBorrar=new ModeloEliminar();
+        modeloBorrar.borrarVenta(idVenta);
+    }
 }

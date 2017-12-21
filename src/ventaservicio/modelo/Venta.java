@@ -15,21 +15,27 @@ public class Venta {
     
     private int idVenta;
     private Date fechaContrato;
+    private Date fechaTerminoOpcional;
     private Date fechaTermino;
-    private int tipoVenta;
+    private String tipoVenta;
     private int valorVenta;
     private String rut;
+    private int precio;
+    private int cantidad;
 
     public Venta() {
     }
 
-    public Venta(int idVenta, Date fechaContrato, Date fechaTermino, int tipoVenta, int valorVenta, String rut) {
+    public Venta(int idVenta, Date fechaContrato, Date fechaTerminoOpcional, Date fechaTermino, String tipoVenta, int valorVenta, String rut, int precio, int cantidad) {
         this.idVenta = idVenta;
         this.fechaContrato = fechaContrato;
+        this.fechaTerminoOpcional = fechaTerminoOpcional;
         this.fechaTermino = fechaTermino;
         this.tipoVenta = tipoVenta;
         this.valorVenta = valorVenta;
         this.rut = rut;
+        this.precio = precio;
+        this.cantidad = cantidad;
     }
 
     public int getIdVenta() {
@@ -48,6 +54,14 @@ public class Venta {
         this.fechaContrato = fechaContrato;
     }
 
+    public Date getFechaTerminoOpcional() {
+        return fechaTerminoOpcional;
+    }
+
+    public void setFechaTerminoOpcional(Date fechaTerminoOpcional) {
+        this.fechaTerminoOpcional = fechaTerminoOpcional;
+    }
+
     public Date getFechaTermino() {
         return fechaTermino;
     }
@@ -56,11 +70,11 @@ public class Venta {
         this.fechaTermino = fechaTermino;
     }
 
-    public int getTipoVenta() {
+    public String getTipoVenta() {
         return tipoVenta;
     }
 
-    public void setTipoVenta(int tipoVenta) {
+    public void setTipoVenta(String tipoVenta) {
         this.tipoVenta = tipoVenta;
     }
 
@@ -79,6 +93,25 @@ public class Venta {
     public void setRut(String rut) {
         this.rut = rut;
     }
-    
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+   
+
+
     
 }

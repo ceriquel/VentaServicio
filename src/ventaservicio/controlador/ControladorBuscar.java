@@ -5,10 +5,22 @@
  */
 package ventaservicio.controlador;
 
+import java.sql.SQLException;
+import ventaservicio.modelo.ModeloBuscar;
+import ventaservicio.modelo.Venta;
+
 /**
  *
  * @author Cèsar
  */
 public class ControladorBuscar {
+    
+     private ModeloBuscar modeloBuscar;
+    
+     public Venta buscarVenta(int idVenta) throws SQLException{
+         modeloBuscar=new ModeloBuscar();
+         return modeloBuscar.buscarVenta(idVenta);
+         
+     }
     
 }
