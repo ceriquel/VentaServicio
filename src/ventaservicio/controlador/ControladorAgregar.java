@@ -17,10 +17,17 @@ public class ControladorAgregar {
     
      private ModeloAgregar modeloAgregar;
      
+
      // public boolean agregarVenta(String tipo_venta, String producto, int precio, int cantidad, Date fechacontra, Date fechaterm,Date fechafinc,int rut, int valorventa) throws SQLException{
        // modeloAgregar=new ModeloAgregar();
         //return modeloAgregar.agregarVenta(tipo_venta, producto, precio, cantidad, fechacontra, fechaterm,fechafinc,rut,valorventa);
     //}
+
+      public boolean agregarVenta(String tipo_venta, String producto, int precio, int cantidad, Date fechacontra, Date fechaterm,Date fechafinc,int rut, int valorventa) throws SQLException{
+        modeloAgregar=new ModeloAgregar();
+        return modeloAgregar.agregarVenta(tipo_venta, producto, precio, cantidad, fechacontra, fechaterm,fechafinc,rut,valorventa);
+    }
+
     
 
     
